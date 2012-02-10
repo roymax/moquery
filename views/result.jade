@@ -1,0 +1,8 @@
+h1= title
+
+-if (errorMsg != '')
+	p= errorMsg
+-else 
+	p 您查询的手机号前七位是：#{number.substr(0, 7)}
+	p 运营商：#{data.telecom ? data.telecom : "无"}
+	p 所属地区：#{data.area ? data.area : "无"}

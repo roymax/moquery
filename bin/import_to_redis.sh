@@ -7,4 +7,4 @@ cat ./db/data.csv | awk -F "|" "BEGIN {x=1} {print \"HMSET\", \$1, \"telecom\", 
 echo 'import data finished.'
 echo 'try it now: '
 echo '	$ redis-cli HGET 1300002 area'
-echo '    "安徽巢湖"'
+echo '	"安徽巢湖"'

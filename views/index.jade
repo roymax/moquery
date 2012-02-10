@@ -1,2 +1,14 @@
 h1= title
-p Welcome to #{title}
+p 归属地数据库从网上下载，共包含`249145`条记录。
+
+form(method="get", action="/query/", onsubmit="return search()")
+	label
+		| 手机号开始查询:
+		input(name='number')
+		input(type='submit', value='查询')
+
+script
+	function search() {
+		
+		return false;
+	}
