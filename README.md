@@ -11,19 +11,24 @@
 
 ###安装部署
 首先安装`redis-server`，如果有`brew`
+
 	brew install redis
 
 安装依赖库 
+
 	cd moquery
 	npm install -d 
 
 启动`redis-server`，导入数据
+	
 	./bin/import_to_redis.sh
 
 启动HTTP服务
+	
 	node app.js
 
 打开浏览器
+	
 	http://localhost:3000/query/13800138000
 
 ###关于数据
