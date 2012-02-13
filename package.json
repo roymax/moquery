@@ -1,10 +1,9 @@
 {
-    "name": "application-name"
-  , "version": "0.0.1"
+    "name": "moquery"
+  , "version": "0.1.0"
   , "private": true
   , "dependencies": {
-      "express": "2.5.5"
-    , "jade": ">= 0.0.1"
-    , "redis": "0.7.1"
+    "redis": "0.7.1"
+    ,"restify": ">=1.0.0"
   }
 }
