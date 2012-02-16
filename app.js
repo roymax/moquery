@@ -3,7 +3,7 @@ var redis = require('redis').createClient();
 
 var server = restify.createServer({
   name: 'moquery',
-  version: '1.0.0'
+  version: '0.1.0'
 });
 server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
