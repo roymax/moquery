@@ -26,7 +26,8 @@ server.get('/mobile/:number', function (req, res, next) {
         next(err);
       }
       if (obj.area){
-          console.dir(obj);
+          obj.mobile = num;
+          console.dir(obj);        
           res.send(obj);  
       } else {
          res.send(new restify.InvalidArgumentError("找不到对应的归属地")); 
